@@ -1,0 +1,56 @@
+.ovesio-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+.ovesio-logo {
+    max-width: 150px;
+    margin-right: 20px;
+}
+.ovesio-title h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.ovesio-panel {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+.ovesio-input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.ovesio-input-group input {
+    flex: 1;
+    background: #f9f9f9;
+}
+.ovesio-alert {
+    padding: 10px 15px;
+    border-left: 4px solid #fff;
+    margin: 15px 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+.ovesio-alert-info {
+    border-left-color: #00a0d2;
+    background: #fff;
+}
+.ovesio-alert-warning {
+    border-left-color: #ffb900;
+    background: #fff;
+}
+.ovesio-form-table th {
+    width: 200px;
+}
+.ovesio-intro {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
