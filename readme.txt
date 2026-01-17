@@ -3,12 +3,12 @@ Contributors: ovesio
 Tags: woocommerce, ecommerce, intelligence, stock management, ai
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 Requires PHP: 7.4
 WC requires at least: 3.0
 WC tested up to: 10.4.3
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License: MIT
+License URI: https://opensource.org/licenses/MIT
 
 Empowers your store with advanced AI-driven insights, stock management forecasting, and strategic consulting.
 
@@ -78,6 +78,9 @@ When you install this plugin, a unique **Security Hash** is automatically genera
 
 == Changelog ==
 
+= 1.1.3 =
+*   License updated to MIT.
+
 = 1.1.2 =
 *   Multiple bug fixes.
 
@@ -88,3 +91,25 @@ When you install this plugin, a unique **Security Hash** is automatically genera
 
 = 1.1.0 =
 *   Initial release of Ovesio - Ecommerce Intelligence.
+
+
+== Author ==
+
+Aweb Design SRL
+
+== License ==
+
+MIT License. See LICENSE file for details.
+
+== Disclaimer ==
+
+This module is provided "AS IS", without warranty of any kind, express or implied.
+The authors and contributors are not liable for any claim, damages, or other liability,
+whether in an action of contract, tort, or otherwise, arising from, out of, or in connection
+with the module or the use or other dealings in the module.
+
+This is an open-source community module and is not an official module of WordPress
+
+This module may rely on third-party services/APIs. Availability and output quality may vary.
+
+Use this module at your own risk. Always test in a staging environment before deploying to production.
