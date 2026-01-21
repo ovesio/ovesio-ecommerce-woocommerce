@@ -140,7 +140,7 @@ class WC_Ovesio_Ecommerce {
 								?>
 								<select name="ovesio_ecommerce_order_states[]" multiple="multiple" class="wc-enhanced-select regular-text" style="width: 300px;">
 									<?php foreach ( $statuses as $status_key => $status_name ) : ?>
-										<option value="<?php echo esc_attr( $status_key ); ?>" <?php echo in_array( $status_key, $selected_statuses ) ? 'selected="selected"' : ''; ?>>
+										<option value="<?php echo esc_attr( $status_key ); ?>" <?php selected( true, in_array( $status_key, $selected_statuses ) ); ?>>
 											<?php echo esc_html( $status_name ); ?>
 										</option>
 									<?php endforeach; ?>
@@ -191,7 +191,7 @@ class WC_Ovesio_Ecommerce {
 
 			if ( get_option( 'ovesio_ecommerce_status' ) !== 'yes' ) {
 				status_header( 403 );
-				echo json_encode( array( 'error' => 'Module is disabled' ) );
+				echo wp_json_encode( array( 'error' => 'Module is disabled' ) );
 				exit;
 			}
 
@@ -201,7 +201,7 @@ class WC_Ovesio_Ecommerce {
 
 			if ( empty( $configuredHash ) || $hash !== $configuredHash ) {
 				status_header( 403 );
-				echo json_encode( array( 'error' => 'Access denied: Invalid Hash' ) );
+				echo wp_json_encode( array( 'error' => 'Access denied: Invalid Hash' ) );
 				exit;
 			}
 
@@ -224,7 +224,7 @@ class WC_Ovesio_Ecommerce {
 	private function output_json( $data, $type ) {
 		$filename = "export_" . $type . "_" . gmdate( 'Y-m-d' ) . ".json";
 		header( 'Content-Disposition: attachment; filename="' . $filename . '";' );
-		echo json_encode( array( 'data' => $data ), JSON_PRETTY_PRINT );
+		echo wp_json_encode( array( 'data' => $data ), JSON_PRETTY_PRINT );
 		exit;
 	}
 }
