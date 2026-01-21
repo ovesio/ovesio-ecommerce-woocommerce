@@ -50,7 +50,7 @@ Connect your store to Ovesio to unlock powerful capabilities:
 
 == Installation ==
 
-1.  **Edit Settings:** Navigate to **WooCommerce** > **Ovesio Ecommerce** in the main menu.
+1.  **Edit Settings:** Navigate to **WooCommerce** > **Ovesio Ecommerce Intelligence** in the main menu.
 2.  **General Settings:**
     *   **Status:** Set to **Enabled**.
     *   **Order Export Period:** Choose the historical period for analysis (Last 12 Months or Last 24 Months).

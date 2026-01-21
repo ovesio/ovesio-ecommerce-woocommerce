@@ -81,10 +81,7 @@ class Ovesio_Ecommerce_Export {
 					// Optimized SKU retrieval not worth singular query override due to object cached by WC,
 					// but we rely on $order object which is already loaded.
 					if ( $product ) {
-						$sku = $product->get_sku();
-						if ( ! $sku ) {
-							$sku = (string) $product->get_id();
-						}
+						$sku = (string) $product->get_id();
 					} else {
 						$sku = (string) $item->get_product_id();
 					}
@@ -240,11 +237,6 @@ class Ovesio_Ecommerce_Export {
                 continue;
             }
 
-            $sku = isset( $meta['_sku'] ) ? $meta['_sku'] : '';
-            if ( empty( $sku ) ) {
-                $sku = (string) $id;
-            }
-
             $qty = isset( $meta['_stock'] ) ? $meta['_stock'] : 0;
             $stock_status = isset( $meta['_stock_status'] ) ? $meta['_stock_status'] : 'instock';
             $availability = $stock_status === 'instock' ? 'in_stock' : 'out_of_stock';
@@ -341,7 +333,7 @@ class Ovesio_Ecommerce_Export {
             }
 
 			$data[] = array(
-				'sku'          => $sku,
+				'sku'          => $id,
 				'name'         => $name,
 				'quantity'     => (int) $qty,
 				'price'        => (float) $price,

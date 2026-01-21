@@ -89,7 +89,7 @@ add_action( 'plugins_loaded', 'ovesio_ecommerce_init' );
 function ovesio_ecommerce_missing_wc_notice() {
 	?>
 	<div class="error">
-		<p><?php echo esc_html__( 'Ovesio Ecommerce requires WooCommerce to be installed and active.', 'ovesio-ecommerce-for-woocommerce' ); ?></p>
+		<p><?php echo esc_html__( 'Ovesio Ecommerce Intelligence requires WooCommerce to be installed and active.', 'ovesio-ecommerce-for-woocommerce' ); ?></p>
 	</div>
 	<?php
 }

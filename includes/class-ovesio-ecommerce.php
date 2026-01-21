@@ -37,8 +37,8 @@ class Ovesio_Ecommerce {
 	public function add_admin_menu() {
 		add_submenu_page(
 			'woocommerce',
-			'Ovesio Ecommerce',
-			'Ovesio Ecommerce',
+			'Ovesio Ecommerce Intelligence',
+			'Ovesio Ecommerce Intelligence',
 			'manage_options',
 			'ovesio-ecommerce-for-woocommerce',
 			array( $this, 'render_settings_page' )
