@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Ovesio - Ecommerce Intelligence for WooCommerce 1.1.5\n"
+"Project-Id-Version: Ovesio - Ecommerce Intelligence for WooCommerce 1.1.7\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
